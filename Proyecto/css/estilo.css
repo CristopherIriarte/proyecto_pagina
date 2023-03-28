@@ -1,0 +1,117 @@
+.header {
+    background-color: rgb(213, 81, 81);
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    text-align-last: center;
+    
+
+}
+
+.container{
+
+    display: flex;
+}
+
+.cabecera{
+    flex-direction: row;
+}
+
+
+.carrusel{
+
+    content: icon;
+    
+    
+}
+
+
+
+.principal {
+    background-color: rgb(25, 187, 241);
+}
+
+
+.abajo{
+    text-align: center;
+
+}
+
+
+.titulo{
+    text-align: center;
+}
+
+/* asdasd */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #69fbd6;
+}
+
+.header{
+    background-color: #1b3039;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 75px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header nav{
+    order: 1;
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:nth-child(1){
+    padding: 0 20px 0 0;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: #53f5bf;
+}
