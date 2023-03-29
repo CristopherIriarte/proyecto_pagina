@@ -10,9 +10,11 @@
 
 }
 
-.container{
+.contenedor {
 
-    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
 }
 
 .cabecera{
@@ -27,7 +29,9 @@
     
 }
 
-
+.titulo{
+    text-align: center;
+}
 
 .principal {
     background-color: rgb(25, 187, 241);
@@ -43,6 +47,7 @@
 .titulo{
     text-align: center;
 }
+
 
 /* asdasd */
 
