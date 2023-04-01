@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo_formulario.css">
     <title>Venta</title>
 </head>
 <body>
@@ -23,88 +24,60 @@
         </ul>            
         </nav>
     </header>
-    <div class="contenedorform">
+    <h1>Formulario de contacto</h1>
+	<form id="formulario" action="#" method="post">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required>
+
+		<label for="telefono">Teléfono:</label>
+		<input type="tel" id="telefono" name="telefono" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="consola">Plataforma:</label>
+		<select id="consola" name="consola">
+			<option value="ps5">PS5</option>
+			<option value="xbox">Xbox</option>
+			<option value="switch">Switch</option>
+		</select>
+
+		<label for="lugar">Lugar de retiro:</label>
+		<select id="lugar" name="lugar">
+			<option value="las-condes">Las Condes</option>
+			<option value="la-reina">La Reina</option>
+			<option value="vitacura">Vitacura</option>
+			<option value="estacion-central">Estación Central</option>
+			<option value="maipu">Maipú</option>
+			<option value="lo-prado">Lo Prado</option>
+		</select>
+
+		<input type="submit" value="Enviar">
+	</form>
+  <footer>
+    <div class="abajo navegador">
         <div class="row">
-          <div class="col-md-6" style="padding-top:50px;">
-    
-            <!-- FORM -->
-            <form id="contact-form">
-              <div class="form-group">
-                <input type="text" name="name" id="name" class="form-control required" placeholder="Nombre Completo"><br />
-              </div>
-              <div class="form-group">
-                <input type="text" name="rut" id="rut" class="form-control required" placeholder="Rut">  <br />
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" id="email" class="form-control required" placeholder="Email"><br />
-              </div>
-              
-              <br />
-    
-              <div class="form-group">
-                <label>
-                  <input type="radio" name="transporte" class="required" checked="checked"> Retiro en Tienda
-                </label>
-                <label>
-                  <input type="radio" name="transporte" class="required"> Despacho A Domicilio
-                </label>
-    
-              </div>
-              <br />
-              <div class="form-group">
-                <div class = "form-group col-md-8">
-                <label>+56 9 </label>
-                <input type="text" name="RutUsuario" id="RutUsuario" class="form-control required"><br/>
-                <label>
-                </label>
-              </div>
-                </div>  
-            
-              <div class="form-group">
-                <label>Lugares de retiro: </label>
-                <select name="retiro" class="required" >
-                  <option value="">-Seleccionar-</option>
-                  <option value="Las Condes">Las Condes</option>
-                  <option value="La Reina">La Reina</option>
-                  <option value="Vitacura">Vitacura</option>
-                  <option value="Estación Central">Estación Central</option>
-                  <option value="Maipú">Maipú</option>
-                  <option value="Lo Prado">Lo Prado</option>
-                </select>
-              </div>
-              <br>
-              <div class="form-group">
-                <label>Consolas: </label>
-                <select name="consola" class="required" >
-                  <option value="">-Seleccionar-</option>
-                  <option value="PS5">PS5</option>
-                  <option value="XBOX">XBOX</option>
-                  <option value="Switch">Switch</option>
-                </select>
-              </div>
-              <br>
-              <div class="form-group">
-                <label>Juegos </label>
-                <select name="juegos" class="required" >
-                  <option value="">-Seleccionar-</option>
-                  <option value="Overwatch 2 ">Overwatch 2</option>
-                  <option value="Assassin's Creed Syndicate">Battlefield 3</option>
-                  <option value="Far Cry Primal">Far Cry Primal</option>
-                  <option value="Hollow Knight">Hollow Knight</option>
-                  <option value="Minecraft">Minecraft</option>
-                  <option value="Subnautica">Subnautica</option>
-                </select>
-              </div>
-            </form>
-          </div>
-    
-          </div>
-    
-        <div>  <button id="submit-form">REGISTRAR</button> </div>
-        
-        <!-- END FORM -->
+            <div class="col-sm-2"><a href="https://twitter.com/home?lang=es"><img
+                        src="img/tw.png" alt="" style="width:42px;height:42px;"></a>
+            </div>
+            <div class="col-sm-2"><a href="https://www.facebook.com/"><img src="img/face.png" alt=""
+                        style="width:42px;height:42px;"></a></div>
+            <div class="col-sm-2"><a href="https://www.instagram.com/"><img
+                        src="img/ints.png" alt="" style="width:42px;height:42px;"></a>
+            </div>
+            <div class="col-sm-2"><a href="nosotros.html">Nosotros</a></div>
+            <div class="col-sm-2"><a href="contacto.html">Contacto</a></div>
         </div>
+        <p>Todos los derechos reservados</p>
+    </div>
+</footer>
+        <script src="js/validar_formulario.js"></script>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
 </body>
 </html>
