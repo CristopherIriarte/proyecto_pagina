@@ -7,24 +7,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/estilo_formulario.css">
-    <title>Venta</title>
+    <title>Comprar</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo de la marca">
-        </div>
-        <nav>
-        <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="venta.html">Ventas</a></li>
-        </ul>            
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="Logo de la empresa">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="venta.html">Comprar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-    </header>
-    <h1>Formulario de contacto</h1>
+      </header>
+    <h2>Formulario de compra</h2>
 	<form id="formulario" action="#" method="post">
 		<label for="nombre">Nombre:</label>
 		<input type="text" id="nombre" name="nombre" required>
@@ -35,6 +52,19 @@
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" required>
 
+        <label for="juego">Juego:</label>
+		<select id="juego" name="juego">
+			<option value="overwatch">Overwatch</option>
+			<option value="battlefield">Battlefield 3</option>
+			<option value="farcry-primal">Far Cry Primal</option>
+			<option value="celeste">Celeste</option>
+			<option value="minecraft">Minecraft</option>
+			<option value="resident-evil">Resident Evil 4</option>
+            <option value="hollow-knight">Hollow Knight</option>
+            <option value="outlast">Outlast</option>
+            <option value="subnautica">Subnautica</option>
+		</select>
+        
 		<label for="consola">Plataforma:</label>
 		<select id="consola" name="consola">
 			<option value="ps5">PS5</option>
@@ -54,6 +84,7 @@
 
 		<input type="submit" value="Enviar">
 	</form>
+    <br>
   <footer>
     <div class="abajo navegador">
         <div class="row">
@@ -79,5 +110,6 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
         crossorigin="anonymous"></script>
+        <script src="js/header.js"></script>
 </body>
 </html>
