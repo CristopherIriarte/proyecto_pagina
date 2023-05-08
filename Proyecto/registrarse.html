@@ -18,47 +18,50 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/estilo_formulario.css">
-    <title>Comprar</title>
+    <title>Suscripción</title>
 </head>
-<body>
+
+<body class="body">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" alt="Logo de la empresa">
+            <img src="img/logo.png" alt="Logo de la empresa">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="productos.html">Productos</a>
+                <a class="nav-link" href="productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="venta.html">Comprar</a>
+                <a class="nav-link" href="venta.html">Comprar</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="registrarse.html">Registrarse</a>
+                    <a class="nav-link" href="registrarse.html">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="apiPokemon.html">Busca Tu Pokemon</a>
+                <a class="nav-link" href="apiPokemon.html">Busca Tu Pokemon</a>
                 </li>
-              </ul>
+            </ul>
             </div>
-          </div>
+        </div>
         </nav>
-      </header>
-    <h2>Formulario de compra</h2>
+    </header>
+
+
+    <h2>Formulario Suscripción</h2>
 	<form id="formulario" action="#" method="post">
 		<label for="nombre">Nombre:</label>
 		<input type="text" id="nombre" name="nombre" required>
@@ -69,65 +72,61 @@
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" required>
 
-        <label for="juego">Juego:</label>
-		<select id="juego" name="juego">
-			<option value="overwatch">Overwatch</option>
-			<option value="battlefield">Battlefield 3</option>
-			<option value="farcry-primal">Far Cry Primal</option>
-			<option value="celeste">Celeste</option>
-			<option value="minecraft">Minecraft</option>
-			<option value="resident-evil">Resident Evil 4</option>
-            <option value="hollow-knight">Hollow Knight</option>
-            <option value="outlast">Outlast</option>
-            <option value="subnautica">Subnautica</option>
-		</select>
-        
-		<label for="consola">Plataforma:</label>
-		<select id="consola" name="consola">
-			<option value="ps5">PS5</option>
-			<option value="xbox">Xbox</option>
-			<option value="switch">Switch</option>
-		</select>
-
-		<label for="lugar">Lugar de retiro:</label>
-		<select id="lugar" name="lugar">
-			<option value="las-condes">Las Condes</option>
-			<option value="la-reina">La Reina</option>
-			<option value="vitacura">Vitacura</option>
-			<option value="estacion-central">Estación Central</option>
-			<option value="maipu">Maipú</option>
-			<option value="lo-prado">Lo Prado</option>
-		</select>
-
-		<input type="submit" value="Enviar">
-	</form>
-    <br>
-  <footer>
-    <div class="abajo navegador">
-        <div class="row">
-            <div class="col-sm-2"><a href="https://twitter.com/home?lang=es"><img
-                        src="img/tw.png" alt="" style="width:42px;height:42px;"></a>
-            </div>
-            <div class="col-sm-2"><a href="https://www.facebook.com/"><img src="img/face.png" alt=""
-                        style="width:42px;height:42px;"></a></div>
-            <div class="col-sm-2"><a href="https://www.instagram.com/"><img
-                        src="img/ints.png" alt="" style="width:42px;height:42px;"></a>
-            </div>
-            <div class="col-sm-2"><a href="nosotros.html">Nosotros</a></div>
-            <div class="col-sm-2"><a href="contacto.html">Contacto</a></div>
+        <div class="form-group">
+            <label for="id_txtContrasena">Password</label>
+            <input type="password" class="form-control" name="txtContrasena" required=""
+                id="id_txtContrasena" placeholder="Password">
         </div>
-        <p>Todos los derechos reservados</p>
-    </div>
-</footer>
+        <div class="form-group">
+            <label for="id_txtRepetirContrasena">Repetir Contraseña</label>
+            <input type="password" class="form-control" name="txtRepetirContrasena" required=""
+                id="id_txtRepetirContrasena" placeholder="Password">
+        </div>
+        <br>
+        <div class="form-check">
+            <button class="btn btn-info" type="button" name="showpassword" id="showpassword"
+                value="Ver Password">Ver password</button>
+                <br>
+                <br>
+                <label>
+                    <input type="checkbox" name="instrument" class="">He leído y acepto los términos y condiciones de uso de este sitio web
+                </label>
+                <input type="submit" value="Suscribirse">
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="abajo navegador">
+            <div class="row">
+                <div class="col-sm-2"><a href="https://twitter.com/home?lang=es"><img
+                            src="img/tw.png" alt="" style="width:42px;height:42px;"></a>
+                </div>
+                <div class="col-sm-2"><a href="https://www.facebook.com/"><img src="img/face.png" alt=""
+                            style="width:42px;height:42px;"></a></div>
+                <div class="col-sm-2"><a href="https://www.instagram.com/"><img
+                            src="img/ints.png" alt="" style="width:42px;height:42px;"></a>
+                </div>
+                <div class="col-sm-2"><a href="nosotros.html">Nosotros</a></div>
+                <div class="col-sm-2"><a href="contacto.html">Contacto</a></div>
+            </div>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
         <script src="js/validar_formulario.js"></script>
         <script src="js/messages_es.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
         crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
         crossorigin="anonymous"></script>
         <script src="js/header.js"></script>
+        <script src="js/ver_password.js"></script>
 </body>
 </html>
